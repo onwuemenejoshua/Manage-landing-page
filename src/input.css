@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customBtn:hover {
+  @apply text-Dark-Grayish-Blue;
+}
+
+.btnHover:hover {
+  @apply bg-Bright-RedLight;
+}
+
+.testimonyBtn:hover {
+  @apply bg-Bright-RedSuperLight;
+}
+
+.footerMenu:hover {
+  @apply text-Bright-Red;
+}
+
+body {
+  background-image: url("/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+
+#cta {
+  background-image: url("/images/bg-simplify-section-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+/* what ever is inside the media query will take effect when the screen is less than 576px */
+@media screen and (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+
+  #cta {
+    background-image: url("/images/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+#menu {
+  transition: right 1s ease;
+}
+
+.openMenu {
+  cursor: pointer;
+  margin: 20px;
+  transition: right 1s ease;
+}
+
+.closeMenu {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  transition: right 1s ease;
+}
+/* 
+@media screen and (max-width: 768px) {
+  .carousel {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+  }
+
+  #carouselItem {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .carousel__actions buttons {
+    border-radius: 50px;
+    font-weight: bold;
+  }
+} */
