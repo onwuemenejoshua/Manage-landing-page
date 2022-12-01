@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./*.html"],
   theme: {
     screens: {
       //all this screen sizes work with min-width i.e from the set width and above do this.
